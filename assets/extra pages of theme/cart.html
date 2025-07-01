@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shared on THEMELOCK.COM -  Blog Carousel || Finris || Finris Multipurpose HTML 5 Template </title>
+    <title>Shared on THEMELOCK.COM -  Cart || Finris || Finris Multipurpose HTML 5 Template </title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
@@ -55,6 +55,7 @@
     <link rel="stylesheet" href="assets/css/module-css/page-header.css" />
     <link rel="stylesheet" href="assets/css/module-css/contact.css" />
     <link rel="stylesheet" href="assets/css/module-css/google-map.css" />
+    <link rel="stylesheet" href="assets/css/module-css/shop.css" />
 
     <!-- template styles -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -218,7 +219,7 @@
                                                                                 alt="">
                                                                             <div
                                                                                 class="megamenu-popup-content-one__btns">
-                                                                                <a href="index3.html"
+                                                                                <a href="index.html"
                                                                                     class="thm-btn megamenu-popup-content-one__btn">Multi
                                                                                     Page</a>
                                                                                 <a href="index3-one-page.html"
@@ -230,7 +231,7 @@
                                                                             class="megamenu-popup-content-one__content">
                                                                             <h3
                                                                                 class="megamenu-popup-content-one__title">
-                                                                                <a href="index3.html">
+                                                                                <a href="index.html">
                                                                                     IT Solutions
                                                                                 </a>
                                                                             </h3>
@@ -392,12 +393,12 @@
             </div>
             <div class="container">
                 <div class="page-header__inner">
-                    <h2>Blog <span> Carousel</span></h2>
+                    <h2>Cart <span>Page</span></h2>
                     <div class="thm-breadcrumb__inner">
                         <ul class="thm-breadcrumb list-unstyled">
                             <li><i class="icon-home"></i><a href="index.html">Home</a></li>
                             <li><span></span></li>
-                            <li>Blog Carousel</li>
+                            <li>Cart</li>
                         </ul>
                     </div>
                 </div>
@@ -405,362 +406,119 @@
         </section>
         <!--Page Header End-->
 
-        <!--Blog Carousel Page Start-->
-        <section class="blog-carousel-page">
+        <!--Start Cart Page-->
+        <section class="cart-page">
             <div class="container">
-                <div class="blog-carousel-style owl-carousel owl-theme carousel-dot-style">
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-1.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
+                <div class="table-responsive">
+                    <table class="table cart-table">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Total</th>
+                                <th>Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>
+                                    <div class="product-box">
+                                        <div class="img-box">
+                                            <img src="assets/images/shop/cart-page-img-1.jpg" alt="">
+                                        </div>
+                                        <h3><a href="product-details.html">Comfy chair</a></h3>
+                                    </div>
+                                </td>
+                                <td>$10.99</td>
+                                <td>
+                                    <div class="quantity-box">
+                                        <button type="button" class="sub"><i class="fa fa-minus"></i></button>
+                                        <input type="number" id="product-1" value="1" />
+                                        <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $10.99
+                                </td>
+                                <td>
+                                    <div class="cross-icon">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="product-box">
+                                        <div class="img-box">
+                                            <img src="assets/images/shop/cart-page-img-2.jpg" alt="">
+                                        </div>
+                                        <h3><a href="product-details.html">Classic chair</a></h3>
+                                    </div>
+                                </td>
+                                <td>$10.99</td>
+                                <td>
+                                    <div class="quantity-box">
+                                        <button type="button" class="sub"><i class="fa fa-minus"></i></button>
+                                        <input type="number" id="product-2" value="1" />
+                                        <button type="button" class="add"><i class="fa fa-plus"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    $10.99
+                                </td>
+                                <td>
+                                    <div class="cross-icon">
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-8 col-lg-7">
+                        <form action="#" class="default-form cart-cupon__form">
+                            <input type="text" placeholder="Enter Coupon Code" class="cart-cupon__input">
+                            <button class="thm-btn" type="submit">Apply Coupon</button>
+                        </form>
+                    </div>
+                    <div class="col-xl-4 col-lg-5">
+                        <ul class="cart-total list-unstyled">
+                            <li>
+                                <span>Subtotal</span>
+                                <span>$20.98 USD </span>
+                            </li>
+                            <li>
+                                <span>Shipping Cost</span>
+                                <span>$0.00 USD</span>
+                            </li>
+                            <li>
+                                <span>Total</span>
+                                <span class="cart-total-amount">$20.98 USD</span>
+                            </li>
+                        </ul>
+                        <div class="cart-page__buttons">
+                            <div class="cart-page__buttons-1">
+                                <a class="thm-btn" href="#">Update</a>
                             </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>August 20, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Future of Artificial
-                                            Intelligence What's Next in 2025?</a></h3>
-                                    <p class="blog-two__text">We move towards 2025, the landscape of artificial
-                                        intelligence.</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
+                            <div class="cart-page__buttons-2">
+                                <a href="checkout.html" class="thm-btn">Checkout</a>
                             </div>
                         </div>
                     </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-2.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>March 15, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Technology</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">5 Essential Wellness Tips
-                                            for a Healthier Lifestyle</a></h3>
-                                    <p class="blog-two__text">Achieving a healthier lifestyle doesn't have to be
-                                        complicated.</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-3.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>August 20, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Sustainable Fashion: How to
-                                            Build an Eco-Friendly Wardrobe</a></h3>
-                                    <p class="blog-two__text">This guide covers sustainable fabrics, ethical brands</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-4.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>October 3, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Mastering the Art of
-                                            Adapting to Changing Digital Marketing</a></h3>
-                                    <p class="blog-two__text">Learn how to adjust your campaigns effectively to maintain
-                                        visibility</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-5.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>March 3, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Engaging a Diverse Audience:
-                                            Tips for Creating Inclusive Content</a></h3>
-                                    <p class="blog-two__text">This blog provides insights into addressing diverse
-                                        audience needs.</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-6.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>April 3, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Balancing Your Digital
-                                            Marketing Budget Strategies</a></h3>
-                                    <p class="blog-two__text">This post offers practical advice on balancing cost
-                                        constraints </p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-7.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>Sept 5, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">The Importance of Accurate
-                                            Performance Reporting</a></h3>
-                                    <p class="blog-two__text">Find out how to track key metrics effectively and use the
-                                        data</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-8.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>Sept 12, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Standing Out in a
-                                            Competitive Market: Strategies</a></h3>
-                                    <p class="blog-two__text">This blog covers innovative strategies for creating a
-                                        unique</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
-                    <!--Blog Two Single Start -->
-                    <div class="item">
-                        <div class="blog-two__single">
-                            <div class="blog-two__img">
-                                <img src="assets/images/blog/blog-2-9.jpg" alt="">
-                                <div class="blog-two__plus">
-                                    <a href="blog-details.html"><span class="icon-plus"></span></a>
-                                </div>
-                            </div>
-                            <div class="blog-two__content">
-                                <div class="blog-two__date">
-                                    <p>Nov 26, 2025 <span class="icon-calendar"></span> </p>
-                                </div>
-                                <div class="blog-two__content-inner">
-                                    <ul class="list-unstyled blog-two__tag">
-                                        <li>
-                                            <p>Productivity</p>
-                                        </li>
-                                        <li>
-                                            <p>&#9733;</p>
-                                        </li>
-                                        <li>
-                                            <p>Tech Innovation</p>
-                                        </li>
-                                    </ul>
-                                    <h3 class="blog-two__title"><a href="blog-details.html">Adapting to Digital
-                                            Marketing Trends: Staying Ahead</a></h3>
-                                    <p class="blog-two__text">Stay informed about the latest digital marketing trends
-                                        and learn</p>
-                                </div>
-                                <div class="blog-two__read-more">
-                                    <div class="blog-two__read-more-line"></div>
-                                    <a href="blog-details.html" class="blog-two__read-more-text">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Blog Two Single End -->
                 </div>
             </div>
         </section>
-        <!--Blog Carousel Page End-->
+        <!--End Cart Page-->
 
 
         <!--Newsletter Two Start -->
         <section class="newsletter-two">
-            <div class="newsletter-two__big-text">
-                Subscribe Newsletter
-            </div>
+            <div class="newsletter-two__big-text">Subscribe Newsletter</div>
             <div class="container">
                 <div class="newsletter-two__inner">
                     <div class="newsletter-two__left">
@@ -781,6 +539,8 @@
         </section>
         <!--Newsletter Two End -->
 
+
+
         <!--Site Footer Two Start-->
         <footer class="site-footer-two">
             <div class="site-footer-two__shape-bg"
@@ -799,9 +559,54 @@
                                 <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
                                     <div class="footer-widget-two__about">
                                         <div class="footer-widget-two__about-logo">
-                                            <a href="index.html"><img src="assets/images/resources/logo-2.png"
+                                            <a href="index.html"><img src="assets/images/resources/Datadyo_white.png"
                                                     alt=""></a>
                                         </div>
+                                        <p class="text-white" style="margin: 20px;" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur odit, sed a quaerat fuga nulla? Esse nam earum voluptatibus reiciendis tempore, ratione voluptate optio, eius repudiandae, nulla atque soluta ex!</p>
+                                        <div class="site-footer-two__social-box">
+                                            <p class="site-footer-two__social-title">Follow Us</p>
+                                            <div class="site-footer-two__social">
+                                                <a href="#"><i class="icon-facebook"></i></a>
+                                                <a href="#"><i class="icon-twitter"></i></a>
+                                                <a href="#"><i class="icon-linkedin"></i></a>
+                                                <a href="#"><i class="icon-pinterest"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                                    <div class="footer-widget-two__quick-links">
+                                        <h4 class="footer-widget-two__title">Quick Links</h4>
+                                        <ul class="footer-widget-two__quick-links-list list-unstyled">
+                                            <li><a href="index.html">Home</a></li>
+                                            <li><a href="Marketer.html">Marketers</a></li>
+                                            <li><a href="about.html">About Us</a></li>
+                                            <li><a href="blog.html">Blogs</a></li>
+                                            <li><a href="terms.html">Terms & Conditions</a></li>
+                                            <li><a href="privacy.html">Privacy Policy</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                                    <div class="footer-widget-two__support">
+                                        <h4 class="footer-widget-two__title">Services</h4>
+                                        <ul
+                                            class="footer-widget-two__quick-links-list footer-widget-two__support-list list-unstyled">
+                                            <li><a href="lead-generation.html">Lead Generation</a></li>
+                                            <li><a href="ppc-advertising.html">PPC Advertising</a></li>
+                                            <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+                                            <li><a href="search-engine-optimization.html">Search Engine Optimization</a></li>
+                                            <li><a href="display-advertising.html">Display Advertising</a></li>
+                                            <li><a href="re-targeting-ads.html">Re-targeting Ads</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                                    <div class="footer-widget-two__services">
+                                        <h4 class="footer-widget-two__title">Reach To Us</h4>
                                         <ul class="footer-widget-two__get-in-touch-list list-unstyled">
                                             <li>
                                                 <div class="icon">
@@ -828,56 +633,6 @@
                                                 </div>
                                             </li>
                                         </ul>
-                                        <div class="site-footer-two__social-box">
-                                            <p class="site-footer-two__social-title">Follow Us</p>
-                                            <div class="site-footer-two__social">
-                                                <a href="#"><i class="icon-facebook"></i></a>
-                                                <a href="#"><i class="icon-twitter"></i></a>
-                                                <a href="#"><i class="icon-linkedin"></i></a>
-                                                <a href="#"><i class="icon-pinterest"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
-                                    <div class="footer-widget-two__quick-links">
-                                        <h4 class="footer-widget-two__title">Quick Links</h4>
-                                        <ul class="footer-widget-two__quick-links-list list-unstyled">
-                                            <li><a href="index.html">Home</a></li>
-                                            <li><a href="pricing.html">Pricing</a></li>
-                                            <li><a href="about.html">About Us</a></li>
-                                            <li><a href="blog.html">Blogs</a></li>
-                                            <li><a href="about.html">Careers</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
-                                    <div class="footer-widget-two__support">
-                                        <h4 class="footer-widget-two__title">Support</h4>
-                                        <ul
-                                            class="footer-widget-two__quick-links-list footer-widget-two__support-list list-unstyled">
-                                            <li><a href="about.html">Teams & Condition</a></li>
-                                            <li><a href="faq.html">FAQs</a></li>
-                                            <li><a href="contact.html">Contact Us</a></li>
-                                            <li><a href="404.html">404 Page</a></li>
-                                            <li><a href="contact.html">Live Chat</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
-                                    <div class="footer-widget-two__services">
-                                        <h4 class="footer-widget-two__title">Our Services</h4>
-                                        <ul
-                                            class="footer-widget-two__quick-links-list footer-widget-two__services-list list-unstyled">
-                                            <li><a href="digital-marketing.html">Products Design</a></li>
-                                            <li><a href="web-design-development.html">Web Application</a></li>
-                                            <li><a href="digital-marketing.html">Digital Marketing</a></li>
-                                            <li><a href="app-development.html">UI/UX Design</a></li>
-                                            <li><a href="search-engine-optimization.html">More Services</a></li>
-                                        </ul>
                                     </div>
                                 </div>
 
@@ -893,9 +648,9 @@
                             <div class="site-footer-two__bottom-inner">
                                 <div class="site-footer-two__copyright">
                                     <p class="site-footer-two__copyright-text">
-                                        &copy; 2025 Finris By
+                                        &copy; 2025  
                                         <a target="_blank"
-                                            href="https://themeforest.net/user/codearchives">CodeArchives</a>.
+                                            href="index.html">Datadyo</a>.
                                         All Rights Reserved.
                                     </p>
                                 </div>
@@ -920,7 +675,7 @@
             <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
 
             <div class="logo-box">
-                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-2.png" width="140"
+                <a href="index.html" aria-label="logo image"><img src="assets/images/resources/logo-1.png" width="140"
                         alt="" /></a>
             </div>
             <!-- /.logo-box -->
