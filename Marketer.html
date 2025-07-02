@@ -478,36 +478,64 @@
                     </div>
                     <div class="col-xl-7 col-lg-6">
                         <div class="cta-three__right">
-                            <form class="contact-form-validated cta-three__form" action="assets/inc/sendemail.php"
-                                method="post" novalidate="novalidate">
-                                <div class="row">
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="cta-three__input-box">
-                                            <input type="text" name="name" placeholder="Your Name" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6">
-                                        <div class="cta-three__input-box">
-                                            <input type="email" name="Email" placeholder="Email Address" required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12 col-lg-12">
-                                        <div class="cta-three__input-box">
-                                            <input type="text" name="Inquiry About" placeholder="Inquiry About"
-                                                required="">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-12">
-                                        <div class="cta-three__input-box text-message-box">
-                                            <textarea name="Write Details" placeholder="Write Details"></textarea>
-                                        </div>
-                                        <div class="cta-three__btn-box">
-                                            <button type="submit" class="cta-three__btn thm-btn thm-btn-two"> <span
-                                                    class="icon-right"></span> Send Message</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
+                            <form class="contact-form-validated cta-three__form container" action="assets/inc/sendemail.php" method="post" novalidate>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" name="first_name" class="form-control" placeholder="First Name" required>
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="last_name" class="form-control" placeholder="Last Name" required>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="text" name="company_name" class="form-control" placeholder="Company Name" required>
+    </div>
+    <div class="col-md-6">
+      <input type="text" name="website" class="form-control" placeholder="Your Website">
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <input type="tel" name="phone" class="form-control" placeholder="Phone Number">
+    </div>
+    <div class="col-md-6">
+      <input type="email" name="email" class="form-control" placeholder="Email" required>
+    </div>
+  </div>
+
+  <div class="row mb-3">
+    <div class="col-12">
+      <input type="text" name="networks" class="form-control" placeholder="Which other networks do you run with?">
+    </div>
+  </div>
+
+  <div class="row mb-4">
+    <div class="col-12">
+      <select name="service" class="form-select" required>
+        <option value="" disabled selected>What kind of service do you want?</option>
+        <option value="Display Advertising">Display Advertising</option>
+        <option value="Email Marketing">Email Marketing</option>
+        <option value="Social Media Marketing">Social Media Marketing</option>
+        <option value="Re-Targeting Ads">Re-Targeting Ads</option>
+        <option value="PPC Advertising">PPC Advertising</option>
+        <option value="Lead Generation">Lead Generation</option>
+        <option value="Search Engine Optimization">Search Engine Optimization</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <button type="submit" class="btn btn-primary">
+      <span class="icon-right"></span> Send Message
+    </button>
+  </div>
+
+</form>
+
                             <div class="result"></div>
                         </div>
                     </div>
